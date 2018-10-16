@@ -19,3 +19,9 @@ La connection série étant à 9600 bauds, inutile de le préciser sur la ligne 
 Le kit contient un lecteur/enregistreur RFID USB. Le tout fonctionne à 125kHz avec différents protocoles, dont celui à 64 bits EM4001/4100
 
 [Lien vers la description du kit](https://www.phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023)
+
+Un fois branché, ce kit n'apparaitra pas automatiquement dans les ports séries. Il faudra installer un driver pour votre OS préféré :
+
+* [Mac OS](https://www.phidgets.com/docs/OS_-_macOS#Quick_Downloads)
+* [Linux]()
+* [Windows]()
