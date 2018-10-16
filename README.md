@@ -29,3 +29,7 @@ Un fois branché, ce kit n'apparaitra pas automatiquement dans les ports séries
 * [Windows](https://www.phidgets.com/docs/OS_-_Windows#Quick_Downloads)
 
 En utilisant le driver, les cartes du kit précédent sont détectés à environ 13cm en suivant la normale à la surface occupée par l'antenne. Ce kit supporte donc le protocole EM4100 mais également [l'ISO 11784](https://en.wikipedia.org/wiki/ISO_11784_%26_11785), le [HITAG S](https://www.united-access.com/sites/www.united-access.com/files/u2/HitagS_V11.pdf) ainsi qu'un protocole maison (le Phidget tag).
+
+La tag doit être présent dans la zone de détection de l'antenne durant au moins 50ms pour être détecté.
+
+Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux langages (C, C#, Java, Python notamment) et très bien documenté.
