@@ -23,5 +23,5 @@ Le kit contient un lecteur/enregistreur RFID USB. Le tout fonctionne à 125kHz a
 Un fois branché, ce kit n'apparaitra pas automatiquement dans les ports séries. Il faudra installer un driver pour votre OS préféré :
 
 * [Mac OS](https://www.phidgets.com/docs/OS_-_macOS#Quick_Downloads)
-* [Linux]()
-* [Windows]()
+* [Linux](https://www.phidgets.com/docs/OS_-_Linux#Quick_Downloads)
+* [Windows](https://www.phidgets.com/docs/OS_-_Windows#Quick_Downloads)
