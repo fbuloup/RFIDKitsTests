@@ -16,3 +16,6 @@ Pour un test rapide sous Mac OS ou Linux, il suffit de lancer dans un terminal
 La connection série étant à 9600 bauds, inutile de le préciser sur la ligne de commande. En passant les cartes devant les lecteurs, on pourra voir l'identifiant s'afficher.
 
 # Test du PhidgetRFID 1024_0
+Le kit contient un lecteur/enregistreur RFID USB. Le tout fonctionne à 125kHz avec différents protocoles, dont celui à 64 bits EM4001/4100
+
+[Lien vers la description du kit](https://www.phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023)
