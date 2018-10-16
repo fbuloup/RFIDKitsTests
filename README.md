@@ -36,3 +36,7 @@ EM4100 protocol
 https://www.united-access.com/sites/www.united-access.com/files/u2/HitagS_V11.pdf
 
 https://en.wikipedia.org/wiki/ISO_11784_%26_11785
+
+This protocol allows storing an ASCII string, up to 24 characters (e.g. I am a Phidgets Tag!)
+Phidget tag
+The ASCII data must be 7-bit, so no extended ASCII support, but standard text is all supported (as well as control codes).
