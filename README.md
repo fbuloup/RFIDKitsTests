@@ -29,3 +29,10 @@ Un fois branché, ce kit n'apparaitra pas automatiquement dans les ports séries
 * [Windows](https://www.phidgets.com/docs/OS_-_Windows#Quick_Downloads)
 
 En utilisant le driver, les cartes du kit précédent sont détectés à environ 13cm en suivant la normale à la surface occupée par l'antenne.
+
+EM4100 protocol
+10-digit hex string
+
+https://www.united-access.com/sites/www.united-access.com/files/u2/HitagS_V11.pdf
+
+https://en.wikipedia.org/wiki/ISO_11784_%26_11785
