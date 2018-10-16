@@ -15,6 +15,8 @@ Pour un test rapide sous Mac OS ou Linux, il suffit de lancer dans un terminal
     screen /dev/tty.usbserial-A506LNUY
 La connection série étant à 9600 bauds, inutile de le préciser sur la ligne de commande. En passant les cartes devant les lecteurs, on pourra voir l'identifiant s'afficher.
 
+Il est possible de supprimer le buzzer en enlevant la goute d'étain qui sert de jumper, noté Buzz sur le PCB !
+
 # Test du PhidgetRFID 1024_0
 Le kit contient un lecteur/enregistreur RFID USB. Le tout fonctionne à 125kHz avec différents protocoles, dont celui à 64 bits EM4001/4100 du kit précédent.
 
