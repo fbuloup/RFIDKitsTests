@@ -8,7 +8,7 @@ Le kit contient un lecteur RFID USB, un scanner RFID ID_12LA et deux tags prépr
 
 [Lien vers une description du protocole EM4100](http://www.priority1design.com.au/em4100_protocol.html)
 
-Avec l'ID_12LA, la détection de la carte est faite à environ 4,5cm. Avec un ID_20LA, acheté séparément, cette distance est portée à environ 7,5cm.
+Avec l'ID_12LA, la détection de la carte est faite à environ 4,5cm en suivant la normale à la surface de la puce. Avec un ID_20LA, acheté séparément, cette distance est portée à environ 7,5cm.
 
 Pour un test rapide sous Mac OS ou Linux, il suffit de lancer dans un terminal 
 
@@ -27,3 +27,5 @@ Un fois branché, ce kit n'apparaitra pas automatiquement dans les ports séries
 * [Mac OS](https://www.phidgets.com/docs/OS_-_macOS#Quick_Downloads)
 * [Linux](https://www.phidgets.com/docs/OS_-_Linux#Quick_Downloads)
 * [Windows](https://www.phidgets.com/docs/OS_-_Windows#Quick_Downloads)
+
+En utilisant le driver, les cartes du kit précédent sont détectés à environ 13cm en suivant la normale à la surface occupée par l'antenne.
