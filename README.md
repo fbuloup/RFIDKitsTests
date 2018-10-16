@@ -32,4 +32,4 @@ En utilisant le driver, les cartes du kit précédent sont détectés à environ
 
 La tag doit être présent dans la zone de détection de l'antenne durant au moins 50ms pour être détecté.
 
-Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux langages (C, C#, Java, Python notamment) et très bien documenté.
+Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux langages (C, C#, Java, Python notamment) et très bien documentée.
