@@ -1,6 +1,6 @@
 # Test du SparkFun RFID starter Kit
 
-Le kit contient un lecteur RFID USB, un scanner RFID ID_12LA et deux tags préprogrammés format carte de crédit. Le tout fonctionne à 125kHz avec le protocole 64 bits EM4001/4100 qui contient 32 bits de données pour l'identification, 8 bits de checksum.
+Le kit contient un lecteur RFID USB, un scanner RFID ID_12LA et deux tags préprogrammés format carte de crédit. Le tout fonctionne à 125kHz avec le protocole 64 bits EM4001/4100 qui contient entre autres 32 bits de données pour l'identification et 8 bits de checksum (chaine de dix caractères hexadécimaux).
 
 [Lien SparkFun vers la description du kit](https://www.sparkfun.com/products/13198?_ga=2.32719358.1725444577.1539675252-164434784.1539675252)
 
@@ -28,15 +28,4 @@ Un fois branché, ce kit n'apparaitra pas automatiquement dans les ports séries
 * [Linux](https://www.phidgets.com/docs/OS_-_Linux#Quick_Downloads)
 * [Windows](https://www.phidgets.com/docs/OS_-_Windows#Quick_Downloads)
 
-En utilisant le driver, les cartes du kit précédent sont détectés à environ 13cm en suivant la normale à la surface occupée par l'antenne.
-
-EM4100 protocol
-10-digit hex string
-
-https://www.united-access.com/sites/www.united-access.com/files/u2/HitagS_V11.pdf
-
-https://en.wikipedia.org/wiki/ISO_11784_%26_11785
-
-This protocol allows storing an ASCII string, up to 24 characters (e.g. I am a Phidgets Tag!)
-Phidget tag
-The ASCII data must be 7-bit, so no extended ASCII support, but standard text is all supported (as well as control codes).
+En utilisant le driver, les cartes du kit précédent sont détectés à environ 13cm en suivant la normale à la surface occupée par l'antenne. Ce kit supporte donc le protocole EM4100 mais également [l'ISO 11784](https://en.wikipedia.org/wiki/ISO_11784_%26_11785), le [HITAG S](https://www.united-access.com/sites/www.united-access.com/files/u2/HitagS_V11.pdf) ainsi qu'un protocole maison (le Phidget tag).
