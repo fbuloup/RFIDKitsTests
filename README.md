@@ -9,3 +9,8 @@ Le kit contient un lecteur RFID USB, un scanner RFID ID_12LA et deux tags prépr
 [Lien vers une description du protocole EM4100](http://www.priority1design.com.au/em4100_protocol.html)
 
 Avec l'ID_12LA, la détection de la carte est faite à environ 4,5cm. Avec un ID_20LA, acheté séparément, cette distance est portée à environ 7,5cm.
+
+'''
+screen /dev/tty.usbserial-A506LNUY
+
+# Test du 
