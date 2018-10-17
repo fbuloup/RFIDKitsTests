@@ -1,5 +1,5 @@
 # Test du SparkFun RFID starter Kit
-<p style="text-align:justify;">Le kit contient un lecteur RFID USB, un scanner RFID ID_12LA et deux tags préprogrammés format carte de crédit. Le tout fonctionne à 125kHz avec le protocole 64 bits EM4001/4100 qui contient entre autres 32 bits de données pour l'identification et 8 bits de checksum (chaine de dix caractères hexadécimaux).</p>
+Le kit contient un lecteur RFID USB, un scanner RFID ID_12LA et deux tags préprogrammés format carte de crédit. Le tout fonctionne à 125kHz avec le protocole 64 bits EM4001/4100 qui contient entre autres 32 bits de données pour l'identification et 8 bits de checksum (chaine de dix caractères hexadécimaux).
 
 [Lien SparkFun vers la description du kit](https://www.sparkfun.com/products/13198?_ga=2.32719358.1725444577.1539675252-164434784.1539675252)
 
@@ -34,9 +34,7 @@ La tag doit être présent dans la zone de détection de l'antenne durant au moi
 Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux langages (C, C#, Java, Python notamment) et très bien documentée.
 
 ### Utilisation avec Java
-<p style="text-align:justify;">
 Une partie de la documentation peut être trouvée en suivant ce [lien](https://phidgets.com/docs/Language_-_Java). La librairie à lier à votre projet se trouve [ici](https://www.phidgets.com/downloads/phidget22/libraries/any/Phidget22Java.zip). Si vous voulez parcourir l'API, suivez simplement ce [lien](https://phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023).
-</p>
 
 Voici le petit programme utilisée pour tester ce module :
 
