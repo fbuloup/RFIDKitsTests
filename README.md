@@ -36,4 +36,7 @@ Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux la
 
 [Java](https://phidgets.com/docs/Language_-_Java)
 
+[Jar lib](https://www.phidgets.com/downloads/phidget22/libraries/any/Phidget22Java.zip)
+
+
 [Python](https://phidgets.com/docs/Language_-_Python)
