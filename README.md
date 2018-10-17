@@ -17,7 +17,7 @@ La connection série étant à 9600 bauds, inutile de le préciser sur la ligne 
 Il est possible de supprimer le buzzer en enlevant la goute d'étain qui sert de jumper, noté Buzz sur le PCB !
 
 # Test du PhidgetRFID 1024_0
-Le kit contient un lecteur/enregistreur RFID USB. Le tout fonctionne également à 125kHz mais avec différents protocoles, dont celui à 64 bits EM4001/4100 du kit précédent. Il est donc possible de programmer soit même les identifiants des tags.
+Le kit contient un lecteur/enregistreur RFID USB. Il est donc possible de programmer soit même les identifiants des tags. Le tout fonctionne également à 125kHz mais avec différents protocoles, dont celui à 64 bits EM4001/4100 du kit précédent.
 
 [Lien vers la description du kit](https://www.phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023)
 
