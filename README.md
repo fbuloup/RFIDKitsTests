@@ -41,3 +41,91 @@ Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux la
 [Java API](https://phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023)
 
 [Python](https://phidgets.com/docs/Language_-_Python)
+
+
+
+```java
+package fr.univamu.ism.rfid;
+
+import java.util.Scanner;
+
+import com.phidget22.AttachEvent;
+import com.phidget22.AttachListener;
+import com.phidget22.DetachEvent;
+import com.phidget22.DetachListener;
+import com.phidget22.PhidgetException;
+import com.phidget22.RFID;
+import com.phidget22.RFIDTagEvent;
+import com.phidget22.RFIDTagListener;
+import com.phidget22.RFIDTagLostEvent;
+import com.phidget22.RFIDTagLostListener;
+
+public class Test {
+	
+	private static long t, dt;
+	
+	private static AttachListener attachListener = new AttachListener() {
+		@Override
+		public void onAttach(AttachEvent attachEvent) {
+			try {
+				System.out.println("From attachListener : " + attachEvent.getSource().getDeviceSerialNumber());
+			} catch (PhidgetException e) {
+				e.printStackTrace();
+			}
+		}
+	};
+	
+	private static DetachListener detachListener = new DetachListener() {
+		@Override
+		public void onDetach(DetachEvent detachEvent) {
+			try {
+				System.out.println("From detachListener : " + detachEvent.getSource().getDeviceSerialNumber());
+			} catch (PhidgetException e) {
+				e.printStackTrace();
+			}
+		}
+	};
+	
+	private static RFIDTagListener rfidTagListener = new RFIDTagListener() {
+		@Override
+		public void onTag(RFIDTagEvent rfidTagEvent) {
+			t = System.currentTimeMillis();
+			System.out.println("Tag in");
+		}
+	};
+	
+	private static RFIDTagLostListener rfidTagLostListener = new RFIDTagLostListener() {
+		@Override
+		public void onTagLost(RFIDTagLostEvent rfidTagLostEvent) {
+			dt = System.currentTimeMillis() - t;
+			System.out.println(dt);
+			System.out.println("Tag out");
+		}
+	};
+
+	public static void main(String[] args) {
+		try {
+			RFID rfid = new RFID();
+			
+			rfid.addAttachListener(attachListener);
+			rfid.addDetachListener(detachListener);
+			rfid.addTagListener(rfidTagListener);
+			rfid.addTagLostListener(rfidTagLostListener);
+			
+			rfid.setDeviceSerialNumber(453467);
+			rfid.setChannel(0);
+			rfid.open(5000);
+			
+			Scanner scanner = new Scanner(System.in);
+			scanner.nextLine();
+			scanner.close();
+			rfid.close();
+			
+		} catch (PhidgetException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
+``` 
