@@ -9,7 +9,7 @@ Le kit contient un lecteur RFID USB, un scanner RFID ID_12LA et deux tags prépr
 
 Avec l'ID_12LA, la détection de la carte est faite à environ 4,5cm en suivant la normale à la surface de la puce. Avec un ID_20LA, acheté séparément, cette distance est portée à environ 7,5cm.
 
-Pour un test rapide sous Mac OS ou Linux, il suffit de lancer dans un terminal 
+Pour un test rapide sous Mac OS ou Linux, il suffit de lancer dans un terminal :
 
     screen /dev/tty.usbserial-A506LNUY
 La connection série étant à 9600 bauds, inutile de le préciser sur la ligne de commande. En passant les cartes devant les lecteurs, on pourra voir l'identifiant s'afficher.
@@ -17,7 +17,7 @@ La connection série étant à 9600 bauds, inutile de le préciser sur la ligne 
 Il est possible de supprimer le buzzer en enlevant la goute d'étain qui sert de jumper, noté Buzz sur le PCB !
 
 # Test du PhidgetRFID 1024_0
-Le kit contient un lecteur/enregistreur RFID USB. Le tout fonctionne également à 125kHz mais avec différents protocoles, dont celui à 64 bits EM4001/4100 du kit précédent.
+Le kit contient un lecteur/enregistreur RFID USB. Le tout fonctionne également à 125kHz mais avec différents protocoles, dont celui à 64 bits EM4001/4100 du kit précédent. Il est donc possible de programmer soit même les identifiants des tags.
 
 [Lien vers la description du kit](https://www.phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023)
 
@@ -29,7 +29,7 @@ Un fois branché, ce kit n'apparaitra pas automatiquement dans les ports séries
 
 En utilisant le driver, les cartes du kit précédent sont détectés à environ 13cm en suivant la normale à la surface occupée par l'antenne. Ce kit supporte donc le protocole EM4100 mais également [l'ISO 11784](https://en.wikipedia.org/wiki/ISO_11784_%26_11785), le [HITAG S](https://www.united-access.com/sites/www.united-access.com/files/u2/HitagS_V11.pdf) ainsi qu'un protocole maison (le Phidget tag).
 
-Selon la documentation, Le tag doit être présent dans la zone de détection de l'antenne durant au moins 50ms pour être détecté. Se référer à la [Documentation - Onglet "User Guide"](https://www.phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023) pour plus de précision. Voici l'extrait en question :
+Selon la documentation, Le tag doit être présent dans la zone de détection de l'antenne durant au moins 50ms pour être détecté (Cf. Documentation - Onglet "User Guide"](https://www.phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023) pour plus de précision). Voici l'extrait en question :
 
     Object Speed
     When trying to read tags, you should allow the tag to remain within detection range for at least 50ms. 
@@ -152,7 +152,7 @@ public class Test {
 
 }
 ``` 
-Les premières mesures montrent que la détection n'est pas faite si la durée de présence du tag est plus petite que 215ms.
+Les premières mesures montrent que la détection n'est pas faite si la durée de présence du tag est plus petite que 215ms environ. Ce qui n'est pas en correspondance avec les spécifications !
 
 ### Utilisation avec Python
 [Python](https://phidgets.com/docs/Language_-_Python)
