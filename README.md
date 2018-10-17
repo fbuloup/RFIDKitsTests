@@ -34,9 +34,9 @@ La tag doit être présent dans la zone de détection de l'antenne durant au moi
 Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux langages (C, C#, Java, Python notamment) et très bien documentée.
 
 ### Utilisation avec Java
-Une partie de la documentation peut être trouvée en suivant ce [lien](https://phidgets.com/docs/Language_-_Java). La librairie à lier à votre projet se trouve [ici](https://www.phidgets.com/downloads/phidget22/libraries/any/Phidget22Java.zip). Si vous voulez parcourir l'API, suivez simplement ce [lien](https://phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023).
+Une partie de la documentation peut être trouvée en suivant ce [lien](https://phidgets.com/docs/Language_-_Java). La librairie qui doit être liée à votre programme se trouve [ici](https://www.phidgets.com/downloads/phidget22/libraries/any/Phidget22Java.zip). Si vous voulez parcourir l'API, suivez simplement ce [lien](https://phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023).
 
-Voici le petit programme utilisée pour tester ce module :
+Voici le petit programme utilisé pour tester ce module :
 
 ```java
 package fr.univamu.ism.rfid;
@@ -148,5 +148,6 @@ public class Test {
 
 }
 ``` 
+Les premières mesures montrent qu'en dessous d'une durée de 215ms environ, le tag n'est pas détecté.
 
 [Python](https://phidgets.com/docs/Language_-_Python)
