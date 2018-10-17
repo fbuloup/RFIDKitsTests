@@ -36,9 +36,9 @@ Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux la
 
 ### Utilisation avec Java
 
-Une partie de la documentation peut être trouvée en suivant ce [lien](https://phidgets.com/docs/Language_-_Java). La librairie a lier à votre projet se trouve [ici](https://www.phidgets.com/downloads/phidget22/libraries/any/Phidget22Java.zip). 
+Une partie de la documentation peut être trouvée en suivant ce [lien](https://phidgets.com/docs/Language_-_Java). La librairie à lier à votre projet se trouve [ici](https://www.phidgets.com/downloads/phidget22/libraries/any/Phidget22Java.zip). Si vous voulez parcourir l'API, suivez simplement ce [lien](https://phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023).
 
-[Java API](https://phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023)
+Voici le petit programme utilisée pour tester ce module :
 
 ```java
 package fr.univamu.ism.rfid;
@@ -120,7 +120,6 @@ public class Test {
 	 */
 	public static void main(String[] args) {
 		try {
-			
 			// Create RFID object
 			RFID rfid = new RFID();
 			
