@@ -148,6 +148,6 @@ public class Test {
 
 }
 ``` 
-Les premières mesures montrent qu'en dessous d'une durée de 215ms environ, le tag n'est pas détecté.
+Les premières mesures montrent qu'en dessous d'une durée de présence du tag d'environ 215ms, la détection n'est pas faite.
 
 [Python](https://phidgets.com/docs/Language_-_Python)
