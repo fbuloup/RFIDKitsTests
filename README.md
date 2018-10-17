@@ -34,15 +34,13 @@ La tag doit être présent dans la zone de détection de l'antenne durant au moi
 
 Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux langages (C, C#, Java, Python notamment) et très bien documentée.
 
+### Utilisation avec Java
+
 [Java](https://phidgets.com/docs/Language_-_Java)
 
 [Jar lib](https://www.phidgets.com/downloads/phidget22/libraries/any/Phidget22Java.zip)
 
 [Java API](https://phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023)
-
-[Python](https://phidgets.com/docs/Language_-_Python)
-
-
 
 ```java
 package fr.univamu.ism.rfid;
@@ -155,3 +153,5 @@ public class Test {
 
 }
 ``` 
+
+[Python](https://phidgets.com/docs/Language_-_Python)
