@@ -62,8 +62,15 @@ import com.phidget22.RFIDTagLostListener;
 
 public class Test {
 	
+	/*
+	 * Some variables for tag detection duration measurement 
+	 */
 	private static long t, dt;
 	
+	/*
+	 * Listener called at program start up if RFID Phidget is already connected
+	 * or when Phidget is plugged in USB port
+	 */
 	private static AttachListener attachListener = new AttachListener() {
 		@Override
 		public void onAttach(AttachEvent attachEvent) {
@@ -75,6 +82,9 @@ public class Test {
 		}
 	};
 	
+	/*
+	 * Listener called when RFID Phidget is unplugged from USB port
+	 */
 	private static DetachListener detachListener = new DetachListener() {
 		@Override
 		public void onDetach(DetachEvent detachEvent) {
@@ -86,6 +96,9 @@ public class Test {
 		}
 	};
 	
+	/*
+	 * Listener called when a tag enters antenna's detection area
+	 */
 	private static RFIDTagListener rfidTagListener = new RFIDTagListener() {
 		@Override
 		public void onTag(RFIDTagEvent rfidTagEvent) {
@@ -94,6 +107,9 @@ public class Test {
 		}
 	};
 	
+	/*
+	 * Listener called when a tag exits antenna's detection area
+	 */
 	private static RFIDTagLostListener rfidTagLostListener = new RFIDTagLostListener() {
 		@Override
 		public void onTagLost(RFIDTagLostEvent rfidTagLostEvent) {
@@ -103,22 +119,32 @@ public class Test {
 		}
 	};
 
+	/*
+	 * Main method
+	 */
 	public static void main(String[] args) {
 		try {
+			
+			// Create RFID object
 			RFID rfid = new RFID();
 			
+			// Add listeners
 			rfid.addAttachListener(attachListener);
 			rfid.addDetachListener(detachListener);
 			rfid.addTagListener(rfidTagListener);
 			rfid.addTagLostListener(rfidTagLostListener);
 			
+			// Configure parameters : open channel number 0 of Phidget serial number 453467
 			rfid.setDeviceSerialNumber(453467);
 			rfid.setChannel(0);
 			rfid.open(5000);
 			
+			// Wait for user to press enter key to terminate program
 			Scanner scanner = new Scanner(System.in);
 			scanner.nextLine();
 			scanner.close();
+			
+			// Close RFID 
 			rfid.close();
 			
 		} catch (PhidgetException e) {
