@@ -32,7 +32,8 @@ En utilisant le driver, les cartes du kit précédent sont détectés à environ
 Selon la documentation, Le tag doit être présent dans la zone de détection de l'antenne durant au moins 50ms pour être détecté. Se référer à la [Documentation - Onglet "User Guide"](https://www.phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023) pour plus de précision. Voici l'extrait en question :
 
     Object Speed
-    When trying to read tags, you should allow the tag to remain within detection range for at least 50ms. Tags moving through the detection area faster than this may not register at all.
+    When trying to read tags, you should allow the tag to remain within detection range for at least 50ms. 
+    Tags moving through the detection area faster than this may not register at all.
 
 Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux langages (C, C#, Java, Python notamment) et très bien documentée.
 
