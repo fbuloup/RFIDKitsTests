@@ -36,9 +36,7 @@ Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux la
 
 ### Utilisation avec Java
 
-Une partie de la documentation peut être trouvée en suivant ce lien [Java](https://phidgets.com/docs/Language_-_Java)
-
-[Jar lib](https://www.phidgets.com/downloads/phidget22/libraries/any/Phidget22Java.zip)
+Une partie de la documentation peut être trouvée en suivant ce [lien](https://phidgets.com/docs/Language_-_Java). La librairie a lier à votre projet se trouve [ici](https://www.phidgets.com/downloads/phidget22/libraries/any/Phidget22Java.zip). 
 
 [Java API](https://phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023)
 
