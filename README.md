@@ -43,7 +43,7 @@ Une partie de la documentation peut être trouvée en suivant ce [lien](https://
 Voici le petit programme utilisé pour tester ce module :
 
 ```java
-package fr.univamu.ism.rfid;
+package fr.cnrs.ism.rfid;
 
 import java.util.Scanner;
 
