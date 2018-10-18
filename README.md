@@ -1,7 +1,6 @@
 # Introduction
 
 [Test du SparkFun RFID starter Kit](#testSparkfun)
-
 [Test du Phidget RFID starter Kit](#testPhidget) 
 
 # Test du SparkFun RFID starter Kit <a id="testSparkfun"></a> 
