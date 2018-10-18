@@ -1,3 +1,5 @@
+# Introducion
+
 # Test du SparkFun RFID starter Kit
 Le kit contient un lecteur RFID USB, un scanner RFID ID_12LA et deux tags préprogrammés format carte de crédit. Le tout fonctionne à 125kHz avec le protocole 64 bits EM4001/4100 qui contient entre autres 32 bits de données pour l'identification et 8 bits de checksum (chaine de dix caractères hexadécimaux).
 
@@ -15,6 +17,10 @@ Pour un test rapide sous Mac OS ou Linux, il suffit de lancer dans un terminal :
 La connection série étant à 9600 bauds, inutile de le préciser sur la ligne de commande. En passant les cartes devant les lecteurs, on pourra voir l'identifiant s'afficher.
 
 Il est possible de supprimer le buzzer en enlevant la goute d'étain qui sert de jumper, noté Buzz sur le PCB !
+
+### Utilisation avec Java
+
+### Utilisation avec Python
 
 # Test du PhidgetRFID 1024_0
 Le kit contient un lecteur/enregistreur RFID USB. Il est donc possible de programmer soit même les identifiants des tags. Le tout fonctionne également à 125kHz mais avec différents protocoles, dont celui à 64 bits EM4001/4100 du kit précédent.
@@ -206,3 +212,6 @@ input("Press Enter to terminate...")
 rfid.close();
 ```
 Les mesures sont bien sûr équivalentes à celles effectuées avec le programme de test en Java.
+
+
+# Conclusion
