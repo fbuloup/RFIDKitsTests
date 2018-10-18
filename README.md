@@ -155,3 +155,53 @@ Les premières mesures montrent que la détection n'est pas faite si la durée d
 
 ### Utilisation avec Python
 [Python](https://phidgets.com/docs/Language_-_Python)
+
+```python
+# Used modules
+from Phidget22.Devices.RFID import *
+import datetime
+
+# Variable for tag detection duration measurement 
+t = datetime.datetime.now()
+
+# Handler called at program start up if RFID Phidget is already connected
+# or when Phidget is plugged in USB port
+def onAttachHandler(self):
+    print("From attachListener : " + str(self.getDeviceSerialNumber()))
+
+# Handler called when RFID Phidget is unplugged from USB port
+def onDetachHandler(self):
+    print("From detachListener : " + str(self.getDeviceSerialNumber()))
+
+# Handler called when a tag enters antenna's detection area
+def onTagHandler(self, tag, protocol):
+    global t
+    print("Tag in")
+    # Catch current time
+    t = datetime.datetime.now() 
+
+# Handler called when a tag exits antenna's detection area
+def onTagLostHandler(self, tag, protocol):
+    dt = datetime.datetime.now() - t
+    print("Tag out : " + str(dt.microseconds/1000))
+
+# Create RFID object
+rfid =  RFID()
+
+# Add handlers (listeners)
+rfid.setOnAttachHandler(onAttachHandler)
+rfid.setOnDetachHandler(onDetachHandler)
+rfid.setOnTagHandler(onTagHandler)
+rfid.setOnTagLostHandler(onTagLostHandler)
+
+# Configure parameters : open channel number 0 of Phidget serial number 453467
+rfid.setDeviceSerialNumber(453467)
+rfid.setChannel(0)
+rfid.open()
+
+# Wait for user to press enter key to terminate program
+input("Press Enter to terminate...")
+
+# Close RFID 
+rfid.close();
+```
