@@ -55,6 +55,7 @@ Une partie de la documentation peut être trouvée en suivant ce [lien](https://
 
 
 <details><summary>Cliquer pour voir le programme utilisé pour tester ce module</summary>
+<p>
 	
 ```java
 package fr.cnrs.ism.rfid;
@@ -165,6 +166,7 @@ public class Test {
 
 }
 ``` 
+</p>
 </details>
 
 
