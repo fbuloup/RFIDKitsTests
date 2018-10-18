@@ -55,7 +55,6 @@ Une partie de la documentation peut être trouvée en suivant ce [lien](https://
 
 
 <details><summary>Voici le petit programme utilisé pour tester ce module :</summary>
-<p>
 	
 ```java
 package fr.cnrs.ism.rfid;
@@ -166,7 +165,8 @@ public class Test {
 
 }
 ``` 
-</p>
+</details>
+
 Les premières mesures montrent que la détection n'est pas faite si la durée de présence du tag est plus petite que 215ms environ. Ce qui n'est pas en correspondance avec les spécifications !?
 
 ### Utilisation avec Python
