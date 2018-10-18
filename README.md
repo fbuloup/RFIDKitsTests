@@ -112,8 +112,7 @@ public class Test {
 		@Override
 		public void onTagLost(RFIDTagLostEvent rfidTagLostEvent) {
 			dt = System.currentTimeMillis() - t;
-			System.out.println(dt);
-			System.out.println("Tag out");
+			System.out.println("Tag out : " + dt);
 		}
 	};
 
