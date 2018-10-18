@@ -53,8 +53,9 @@ Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux la
 ### Utilisation avec Java
 Une partie de la documentation peut être trouvée en suivant ce [lien](https://phidgets.com/docs/Language_-_Java). La librairie qui doit être liée au programme se trouve [ici](https://www.phidgets.com/downloads/phidget22/libraries/any/Phidget22Java.zip). Pour parcourir l'API, suivre ce [lien](https://phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023) puis sélectionner l'onglet API.
 
-Voici le petit programme utilisé pour tester ce module :
 
+<details><summary>Voici le petit programme utilisé pour tester ce module :</summary>
+<p>
 ```java
 package fr.cnrs.ism.rfid;
 
@@ -164,6 +165,7 @@ public class Test {
 
 }
 ``` 
+</p>
 Les premières mesures montrent que la détection n'est pas faite si la durée de présence du tag est plus petite que 215ms environ. Ce qui n'est pas en correspondance avec les spécifications !?
 
 ### Utilisation avec Python
