@@ -1,11 +1,11 @@
 # Introduction
 
 * [Test du SparkFun RFID starter Kit](#testSparkfun)
-	* Java
-	* Python
+	* Avec Java
+	* Avec Python
 * [Test du Phidget RFID starter Kit](#testPhidget) 
-	* Java
-	* Python
+	* Avec Java
+	* Avec Python
 
 # Test du SparkFun RFID starter Kit <a id="testSparkfun"></a> 
 Le kit contient un lecteur RFID USB, un scanner RFID ID_12LA et deux tags préprogrammés format carte de crédit. Le tout fonctionne à 125kHz avec le protocole 64 bits EM4001/4100 qui contient entre autres 32 bits de données pour l'identification et 8 bits de checksum (chaine de dix caractères hexadécimaux).
