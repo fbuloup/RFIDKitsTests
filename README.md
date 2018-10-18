@@ -167,9 +167,8 @@ public class Test {
 ``` 
 </details>
 
-<p>
+<br/>
 Les premières mesures montrent que la détection n'est pas faite si la durée de présence du tag est plus petite que 215ms environ. Ce qui n'est pas en correspondance avec les spécifications !?
-</p>
 
 ### Utilisation avec Python
 Suivre ce [lien](https://phidgets.com/docs/Language_-_Python) pour télécharger le module Python ou consulter la documentation. Voici le programme de test utilisé :
