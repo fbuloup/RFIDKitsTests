@@ -73,7 +73,7 @@ public class Test {
 		@Override
 		public void onAttach(AttachEvent attachEvent) {
 			try {
-				System.out.println("From attachListener : " + attachEvent.getSource().getDeviceSerialNumber());
+				System.out.println("From attach listener : " + attachEvent.getSource().getDeviceSerialNumber());
 			} catch (PhidgetException e) {
 				e.printStackTrace();
 			}
@@ -87,7 +87,7 @@ public class Test {
 		@Override
 		public void onDetach(DetachEvent detachEvent) {
 			try {
-				System.out.println("From detachListener : " + detachEvent.getSource().getDeviceSerialNumber());
+				System.out.println("From detach listener : " + detachEvent.getSource().getDeviceSerialNumber());
 			} catch (PhidgetException e) {
 				e.printStackTrace();
 			}
@@ -167,11 +167,11 @@ t = datetime.datetime.now()
 # Handler called at program start up if RFID Phidget is already connected
 # or when Phidget is plugged in USB port
 def onAttachHandler(self):
-    print("From attachListener : " + str(self.getDeviceSerialNumber()))
+    print("From attach handler : " + str(self.getDeviceSerialNumber()))
 
 # Handler called when RFID Phidget is unplugged from USB port
 def onDetachHandler(self):
-    print("From detachListener : " + str(self.getDeviceSerialNumber()))
+    print("From detach handler : " + str(self.getDeviceSerialNumber()))
 
 # Handler called when a tag enters antenna's detection area
 def onTagHandler(self, tag, protocol):
