@@ -54,7 +54,7 @@ Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux la
 Une partie de la documentation peut être trouvée en suivant ce [lien](https://phidgets.com/docs/Language_-_Java). La librairie qui doit être liée au programme se trouve [ici](https://www.phidgets.com/downloads/phidget22/libraries/any/Phidget22Java.zip). Pour parcourir l'API, suivre ce [lien](https://phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023) puis sélectionner l'onglet API.
 
 
-<details><summary>Cliquer pour voir le programme utilisé pour tester ce module</summary>
+<details><summary>Cliquer pour voir le programme Java utilisé pour tester ce module</summary>
 
 ```java
 package fr.cnrs.ism.rfid;
@@ -166,13 +166,14 @@ public class Test {
 }
 ``` 
 </details>
-
 <br/>
 Les premières mesures montrent que la détection n'est pas faite si la durée de présence du tag est plus petite que 215ms environ. Ce qui n'est pas en correspondance avec les spécifications !?
 
 ### Utilisation avec Python
 Suivre ce [lien](https://phidgets.com/docs/Language_-_Python) pour télécharger le module Python ou consulter la documentation. Voici le programme de test utilisé :
 
+<details><summary>Cliquer pour voir le programme Python utilisé pour tester ce module</summary>
+	
 ```python
 # Used modules
 from Phidget22.Devices.RFID import *
@@ -222,7 +223,8 @@ input("Press Enter to terminate...")
 # Close RFID 
 rfid.close();
 ```
+</details>
+<br/>
 Les mesures sont bien sûr équivalentes à celles effectuées avec le programme de test en Java.
-
 
 # Conclusion
