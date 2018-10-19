@@ -49,7 +49,7 @@ ser.open()
 n = 0
 while True :
     line = ser.readline()
-    print(line.rstrip())
+    print(line)
     n = n + 1
     if(n == 10):
         break
