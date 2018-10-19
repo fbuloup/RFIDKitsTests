@@ -25,7 +25,11 @@ Avec l'ID_12LA, la détection de la carte est faite à environ 4,5cm en suivant 
 Pour un test rapide sous Mac OS ou Linux, il suffit de lancer dans un terminal :
 
     screen /dev/tty.usbserial-A506LNUY
-La connection série étant à 9600 bauds, inutile de le préciser sur la ligne de commande. En passant les cartes devant les lecteurs, on pourra voir l'identifiant s'afficher.
+La connection série étant à 9600 bauds, inutile de le préciser sur la ligne de commande. En passant les cartes devant les lecteurs, on pourra voir l'identifiant s'afficher, comme ceci :
+
+    5500378C20CE
+    5500378223C3
+    000000000101
 
 Il est possible de supprimer le buzzer en enlevant la goute d'étain qui sert de jumper, sérigraphié Buzz sur le PCB ! 
 
