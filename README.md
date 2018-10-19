@@ -1,6 +1,6 @@
 # Introduction
 
-Cette page présente les diffétents tests effectués sur deux modules RFID. Le premier est le Sparkfun Stater Kit et le seconde est le Phidget RFID 1024_0. Les tests ont été effectués en utilsant les langages Java et Python.
+Cette page présente les tests effectués sur deux modules RFID. Le premier est le Sparkfun Stater Kit et le seconde est le Phidget RFID 1024_0. Les tests ont été effectués en utilsant les langages Java et Python.
 
 * [Test du SparkFun RFID starter Kit](#testSparkfun)
 	* [Avec Java](#testSparkfun_Java)
@@ -8,6 +8,8 @@ Cette page présente les diffétents tests effectués sur deux modules RFID. Le 
 * [Test du Phidget RFID 1024_0](#testPhidget) 
 	* [Avec Java](#testPhidget_Java)
 	* [Avec Python](#testPhidget_Python)
+
+* [Conclusion](#conclusion) 
 
 # Test du SparkFun RFID starter Kit <a id="testSparkfun"></a> 
 Le kit contient un lecteur RFID USB, un scanner RFID ID_12LA et deux tags préprogrammés format carte de crédit. Le tout fonctionne à 125kHz avec le protocole 64 bits EM4001/4100 qui contient entre autres 32 bits de données pour l'identification et 8 bits de checksum (chaine de dix caractères hexadécimaux).
@@ -229,4 +231,4 @@ rfid.close();
 <br/>
 Les mesures sont bien sûr équivalentes à celles effectuées avec le programme de test en Java.
 
-# Conclusion
+# Conclusion <a id="conclusion"></a> 
