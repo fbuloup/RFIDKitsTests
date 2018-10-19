@@ -33,6 +33,8 @@ Il est possible de supprimer le buzzer en enlevant la goute d'étain qui sert de
 
 ### Utilisation avec Python <a id="testSparkfun_Python"></a> 
 
+<details><summary>Cliquer pour voir le programme Python utilisé pour tester ce module</summary>
+
 ```python
 # Create, configure and open serial port
 import serial
@@ -40,7 +42,8 @@ ser = serial.Serial()
 ser.baudrate = 9600 
 ser.port = '/dev/tty.usbserial-A506LNUY'
 ser.open()
-# Detect 10 tag occurence and exit
+
+# Detect 10 tag occurences and exit
 n = 0
 while True :
     line = ser.readline()
@@ -52,8 +55,8 @@ while True :
 # Close serial port
 ser.close()
 ```
-
-
+</details>
+<br/>
 
 # Test du Phidget RFID 1024_0 <a id="testPhidget"></a> 
 Le kit contient un lecteur/enregistreur RFID USB. Il est donc possible de programmer soit même les identifiants des tags. Le tout fonctionne également à 125kHz mais avec différents protocoles, dont celui à 64 bits EM4001/4100 du kit précédent.
