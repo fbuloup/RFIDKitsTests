@@ -57,7 +57,19 @@ ser.close()
 ```
 </details>
 <br/>
+On obtient ce type de sortie console :
 
+    b'\x025500378C20CE'
+    b'\x03\x025500378223C3'
+    b'\x03\x02000000000101'
+    b'\x03\x02000000000303'
+    b'\x03\x02000000000202'
+    b'\x03\x025500378223C3'
+    b'\x03\x025500378C20CE'
+    b'\x03\x02000000000101'
+    b'\x03\x02000000000303'
+    b'\x03\x02000000000303'
+    
 # Test du Phidget RFID 1024_0 <a id="testPhidget"></a> 
 Le kit contient un lecteur/enregistreur RFID USB. Il est donc possible de programmer soit même les identifiants des tags. Le tout fonctionne également à 125kHz mais avec différents protocoles, dont celui à 64 bits EM4001/4100 du kit précédent.
 
