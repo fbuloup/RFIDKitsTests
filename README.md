@@ -347,3 +347,4 @@ Les mesures sont bien sûr équivalentes à celles effectuées avec le programme
 # Conclusion <a id="conclusion"></a> 
 
 Le kit de sparkfun est très rapide à mettre en oeuvre 
+Cmde sortie avec phidgets
