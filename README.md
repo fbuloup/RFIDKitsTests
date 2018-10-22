@@ -37,6 +37,8 @@ En plus des bits relatifs au protocole EM4100, le module entoure la chaine de ca
 
 ### Utilisation avec Java <a id="testSparkfun_Java"></a> 
 
+Pour utiliser ce kit avec Java il faudra utiliser la bibliothèque native [JSSC](https://code.google.com/archive/p/java-simple-serial-connector/) pour pouvoir gérer le port série.
+
 <details><summary>Cliquer pour voir le programme Java utilisé pour tester ce module</summary>
 
 ```java
@@ -343,3 +345,5 @@ rfid.close();
 Les mesures sont bien sûr équivalentes à celles effectuées avec le programme de test en Java.
 
 # Conclusion <a id="conclusion"></a> 
+
+Le kit de sparkfun est très rapide à mettre en oeuvre 
