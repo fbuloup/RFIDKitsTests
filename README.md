@@ -102,6 +102,7 @@ public class SparkfunRFIDStarterKitTest extends Thread {
 ```
 </details>
 <br/>
+
 ### Utilisation avec Python <a id="testSparkfun_Python"></a> 
 
 <details><summary>Cliquer pour voir le programme Python utilisé pour tester ce module</summary>
