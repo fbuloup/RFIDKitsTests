@@ -353,6 +353,7 @@ En vrac avec avantages pour le kit RFID phidgets !
 * kit phidgets RFID est plus sensible
 * API très intéressante chez Phidgets
 
+À voir :
 
 https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide
 
