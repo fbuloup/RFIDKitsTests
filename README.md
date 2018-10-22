@@ -346,5 +346,14 @@ Les mesures sont bien sûr équivalentes à celles effectuées avec le programme
 
 # Conclusion <a id="conclusion"></a> 
 
-Le kit de sparkfun est très rapide à mettre en oeuvre 
-Cmde sortie avec phidgets
+En vrac avec avantages pour le kit RFID phidgets !
+
+* Prix équivalents
+* kit phidgets RFID avec sortie numérique
+* kit phidgets RFID est plus sensible
+* API très intéressante chez Phidgets
+
+
+https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide
+
+
