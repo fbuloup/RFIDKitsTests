@@ -37,6 +37,71 @@ En plus des bits relatifs au protocole EM4100, le module entoure la chaine de ca
 
 ### Utilisation avec Java <a id="testSparkfun_Java"></a> 
 
+<details><summary>Cliquer pour voir le programme Java utilisé pour tester ce module</summary>
+
+```java
+package fr.univamu.ism.rfid;
+
+import java.util.Scanner;
+
+import jssc.SerialPort;
+import jssc.SerialPortException;
+
+
+public class SparkfunRFIDStarterKitTest extends Thread {
+	
+	private boolean terminate;
+	private byte[] buffer = new byte[1024];
+	private SerialPort serialPort;
+	
+	public SparkfunRFIDStarterKitTest() { 
+	    try {
+			terminate = false;
+			serialPort = new SerialPort("/dev/tty.usbserial-A506LNUY");
+	        serialPort.openPort();
+	        serialPort.setParams(SerialPort.BAUDRATE_9600, SerialPort.DATABITS_8, SerialPort.STOPBITS_1, SerialPort.PARITY_NONE);
+	    } catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void run() {
+		while (!terminate && !isInterrupted()) {
+			try {
+				while ( ( buffer = serialPort.readBytes() ) != null ) {
+				    System.out.print(new String(buffer,0,buffer.length));
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+		}
+		try {
+			serialPort.closePort();
+		} catch (SerialPortException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void terminate() {
+		terminate = true;
+	}
+
+	public static void main(String[] args) {
+		SparkfunRFIDStarterKitTest serialThread = new SparkfunRFIDStarterKitTest();
+		serialThread.start();
+		
+		// Wait for user to press enter key to terminate program
+		Scanner scanner = new Scanner(System.in);
+		scanner.nextLine();
+		scanner.close();
+		
+		serialThread.terminate();
+	}
+}
+```
+</details>
+<br/>
 ### Utilisation avec Python <a id="testSparkfun_Python"></a> 
 
 <details><summary>Cliquer pour voir le programme Python utilisé pour tester ce module</summary>
