@@ -56,13 +56,13 @@ public class SparkfunRFIDStarterKitTest extends Thread {
 	
 	public SparkfunRFIDStarterKitTest() { 
 	    try {
-			terminate = false;
-			serialPort = new SerialPort("/dev/tty.usbserial-A506LNUY");
+		terminate = false;
+		serialPort = new SerialPort("/dev/tty.usbserial-A506LNUY");
 	        serialPort.openPort();
 	        serialPort.setParams(SerialPort.BAUDRATE_9600, SerialPort.DATABITS_8, SerialPort.STOPBITS_1, SerialPort.PARITY_NONE);
 	    } catch (Exception e) {
-			e.printStackTrace();
-		}
+		e.printStackTrace();
+	    }
 	}
 
 	public void run() {
@@ -72,6 +72,7 @@ public class SparkfunRFIDStarterKitTest extends Thread {
 				    System.out.print(new String(buffer,0,buffer.length));
 				}
 			} catch (Exception e) {
+				terminate = true;
 				e.printStackTrace();
 			}
 			
