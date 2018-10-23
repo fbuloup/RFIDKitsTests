@@ -14,7 +14,9 @@ Cette page présente les tests effectués sur deux modules RFID. Le premier est 
 * [Conclusion](#conclusion) 
 
 # Test du SparkFun RFID starter Kit <a id="testSparkfun"></a> 
+<div align="justify">
 Le kit contient un lecteur RFID USB, un scanner RFID ID_12LA et deux tags préprogrammés format carte de crédit. Le tout fonctionne à 125kHz avec le protocole 64 bits EM4001/4100 qui contient entre autres 32 bits de données pour l'identification et 8 bits de checksum (chaine de dix caractères hexadécimaux).
+</div>
 
 [Lien vers la description du kit](https://www.sparkfun.com/products/13198?_ga=2.32719358.1725444577.1539675252-164434784.1539675252)
 
