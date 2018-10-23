@@ -1,6 +1,6 @@
 # Introduction
 
-Cette page présente les tests effectués sur deux modules RFID. Le premier est le Sparkfun Stater Kit et le second est le Phidget RFID 1024_0. Les tests ont été effectués en utilsant les langages Java et Python. En conclusion est présenté une synthèse comparative de ces deux kits.
+[justify]Cette page présente les tests effectués sur deux modules RFID. Le premier est le Sparkfun Stater Kit et le second est le Phidget RFID 1024_0. Les tests ont été effectués en utilsant les langages Java et Python. En conclusion est présenté une synthèse comparative de ces deux kits.[/justify]
 
 * [Test du SparkFun RFID starter Kit](#testSparkfun)
 	* [Avec Java](#testSparkfun_Java)
