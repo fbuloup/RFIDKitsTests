@@ -24,20 +24,26 @@ Le kit contient un lecteur RFID USB, un scanner RFID ID_12LA et deux tags prépr
 
 [Lien vers une description du protocole EM4100](http://www.priority1design.com.au/em4100_protocol.html)
 
+<div align="justify">
 Avec l'ID_12LA, la détection de la carte est faite à environ 4,5cm en suivant la normale à la surface de la puce. Avec un ID_20LA, acheté séparément, cette distance est portée à environ 7,5cm.
+</div>
 
 Pour un test rapide sous Mac OS ou Linux, il suffit de lancer dans un terminal :
 
     screen /dev/tty.usbserial-A506LNUY
+<div align="justify">
 La connection série étant à 9600 bauds, inutile de le préciser sur la ligne de commande. En passant les cartes devant les lecteurs, on pourra voir l'identifiant s'afficher, comme ceci :
+</div>
 
     5500378C20CE
     5500378223C3
     000000000101
 
+<div align="justify">
 Il est possible de supprimer le buzzer en enlevant la goute d'étain qui sert de jumper, sérigraphié Buzz sur le PCB ! 
 
 En plus des bits relatifs au protocole EM4100, le module entoure la chaine de caractères des codes 0x02 (start of text) en début de chaine et 0x0A (CR), 0x0D (LF), 0x03 (end of text) en fin de chaine.
+</div>
 
 ### Utilisation avec Java <a id="testSparkfun_Java"></a> 
 
