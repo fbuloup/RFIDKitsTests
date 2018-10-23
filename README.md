@@ -348,12 +348,12 @@ Les mesures sont bien sûr équivalentes à celles effectuées avec le programme
 
 En vrac avec avantages pour le kit RFID phidgets !
 
-* Prix équivalents
-* kit phidgets RFID avec sortie numérique
-* kit phidgets RFID est plus sensible
-* API très intéressante chez Phidgets
+* les deux kit sont sensiblement au même prix
+* le kit phidgets RFID possède des sorties numériques
+* le kit phidgets RFID est plus sensible
+* le kit phidgets RFID propose une API intéressante
 
-À voir :
+À voir aussi (mais plus cher) :
 
 https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide
 
