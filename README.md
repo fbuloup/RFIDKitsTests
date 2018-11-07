@@ -17,7 +17,7 @@ Cette page présente les tests effectués sur deux modules RFID. Le premier est 
 
 [Avec Python](#testPhidget_Python)
 
-[Conclusion](#conclusion) 
+
 
 
 * [Test du SparkFun RFID starter Kit](#testSparkfun)
