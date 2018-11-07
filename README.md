@@ -5,9 +5,9 @@ Cette page présente les tests effectués sur deux modules RFID. Le premier est 
 </p>
 
 * [Test du SparkFun RFID starter Kit](#test-du-sparkfun-rfid-starter-kit)
-	* [Avec Java](#utilisation-avec-java-(sparkfun)-)
-	* [Avec Python](#utilisation-avec-Python-(sparkfun)-)
-* [Test du Phidget RFID 1024_0](#test-du-phidget-rfid-1024_0-) 
+	* [Avec Java](#utilisation-avec-java-sparkfun)
+	* [Avec Python](#utilisation-avec-Python-sparkfun)
+* [Test du Phidget RFID 1024_0](#test-du-phidget-rfid-1024_0) 
 	* [Avec Java](#utilisation-avec-java-(phidget)-)
 	* [Avec Python](#utilisation-avec-python-(phidget)-)
 * [Conclusion](#conclusion) 
