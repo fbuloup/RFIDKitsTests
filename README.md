@@ -44,7 +44,7 @@ La connection série étant à 9600 bauds, inutile de le préciser sur la ligne 
 Il est possible de supprimer le buzzer en enlevant la goute d'étain qui sert de jumper, sérigraphié Buzz sur le PCB ! En plus des bits relatifs au protocole EM4100, le module entoure la chaine de caractères des codes 0x02 (start of text) en début de chaine et 0x0A (CR), 0x0D (LF), 0x03 (end of text) en fin de chaine.
 </div>
 
-### Utilisation avec Java <a id="testSparkfun_Java"></a> 
+# Utilisation avec Java <a id="testSparkfun_Java"></a> 
 
 Pour utiliser ce kit avec Java il faudra utiliser la bibliothèque native [JSSC](https://code.google.com/archive/p/java-simple-serial-connector/) pour pouvoir gérer le port série.
 
