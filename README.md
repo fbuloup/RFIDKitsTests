@@ -4,12 +4,10 @@
 Cette page présente les tests effectués sur deux modules RFID. Le premier est le Sparkfun Stater Kit et le second est le Phidget RFID 1024_0. Les tests ont été effectués en utilsant les langages Java et Python. En conclusion est présenté une synthèse comparative de ces deux kits.
 </p>
 
-
 [Test du SparkFun RFID starter Kit](#testSparkfun)
 
-
 * [Test du SparkFun RFID starter Kit](#testSparkfun)
-	* [Avec Java](#testSparkfunJava)
+	* [Avec Java](#testSparkfun_Java)
 	* [Avec Python](#testSparkfun_Python)
 * [Test du Phidget RFID 1024_0](#testPhidget) 
 	* [Avec Java](#testPhidget_Java)
@@ -17,6 +15,7 @@ Cette page présente les tests effectués sur deux modules RFID. Le premier est 
 * [Conclusion](#conclusion) 
 
 # Test du SparkFun RFID starter Kit <a id="testSparkfun"></a> 
+
 <div align="justify">
 Le kit contient un lecteur RFID USB, un scanner RFID ID_12LA et deux tags préprogrammés format carte de crédit. Le tout fonctionne à 125kHz avec le protocole 64 bits EM4001/4100 qui contient entre autres 32 bits de données pour l'identification et 8 bits de checksum (chaine de dix caractères hexadécimaux).
 </div>
@@ -44,7 +43,7 @@ La connection série étant à 9600 bauds, inutile de le préciser sur la ligne 
 Il est possible de supprimer le buzzer en enlevant la goute d'étain qui sert de jumper, sérigraphié Buzz sur le PCB ! En plus des bits relatifs au protocole EM4100, le module entoure la chaine de caractères des codes 0x02 (start of text) en début de chaine et 0x0A (CR), 0x0D (LF), 0x03 (end of text) en fin de chaine.
 </div>
 
-### Utilisation avec Java <a id="testSparkfunJava"></a> 
+### Utilisation avec Java <a id="testSparkfun_Java"></a> 
 
 Pour utiliser ce kit avec Java il faudra utiliser la bibliothèque native [JSSC](https://code.google.com/archive/p/java-simple-serial-connector/) pour pouvoir gérer le port série.
 
@@ -156,6 +155,7 @@ On obtient ce type de sortie console où l'on retrouve bien les caractères de d
     
 
 # Test du Phidget RFID 1024_0 <a id="testPhidget"></a> 
+
 Le kit contient un lecteur/enregistreur RFID USB. Il est donc possible de programmer soit même les identifiants des tags. Le tout fonctionne également à 125kHz mais avec différents protocoles, dont celui à 64 bits EM4001/4100 du kit précédent.
 
 [Lien vers la description du kit](https://www.phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023)
@@ -177,6 +177,7 @@ Selon la documentation, Le tag doit être présent dans la zone de détection de
 Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux langages (C, C#, Java, Python notamment) et très bien documentée.
 
 ### Utilisation avec Java <a id="testPhidget_Java"></a> 
+
 Une partie de la documentation peut être trouvée en suivant ce [lien](https://phidgets.com/docs/Language_-_Java). La librairie qui doit être liée au programme se trouve [ici](https://www.phidgets.com/downloads/phidget22/libraries/any/Phidget22Java.zip). Pour parcourir l'API, suivre ce [lien](https://phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023) puis sélectionner l'onglet API.
 
 
@@ -296,6 +297,7 @@ public class Test {
 Les premières mesures montrent que la détection n'est pas faite si la durée de présence du tag est plus petite que 215ms environ. Ce qui n'est pas en correspondance avec les spécifications !?
 
 ### Utilisation avec Python <a id="testPhidget_Python"></a> 
+
 Suivre ce [lien](https://phidgets.com/docs/Language_-_Python) pour télécharger le module Python ou consulter la documentation. Voici le programme de test utilisé :
 
 <details><summary>Cliquer pour voir le programme Python utilisé pour tester ce module</summary>
