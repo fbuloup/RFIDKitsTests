@@ -4,17 +4,15 @@
 Cette page présente les tests effectués sur deux modules RFID. Le premier est le Sparkfun Stater Kit et le second est le Phidget RFID 1024_0. Les tests ont été effectués en utilsant les langages Java et Python. En conclusion est présenté une synthèse comparative de ces deux kits.
 </p>
 
-[Test du SparkFun RFID starter Kit](#test-du-sparkfun-rfid-starter-kit-)
-
-* [Test du SparkFun RFID starter Kit](#testSparkfun)
+* [Test du SparkFun RFID starter Kit](#test-du-SparkFun-RFID-starter-Kit-)
 	* [Avec Java](#utilisation-avec-Java-)
-	* [Avec Python](#testSparkfun_Python)
-* [Test du Phidget RFID 1024_0](#testPhidget) 
+	* [Avec Python](#utilisation-avec-Python-)
+* [Test du Phidget RFID 1024_0](#test-du-phidget-rfid-1024_0-) 
 	* [Avec Java](#testPhidget_Java)
 	* [Avec Python](#testPhidget_Python)
 * [Conclusion](#conclusion) 
 
-# Test du SparkFun RFID starter Kit <a id="testSparkfun"></a> 
+# Test du SparkFun RFID starter Kit
 
 <div align="justify">
 Le kit contient un lecteur RFID USB, un scanner RFID ID_12LA et deux tags préprogrammés format carte de crédit. Le tout fonctionne à 125kHz avec le protocole 64 bits EM4001/4100 qui contient entre autres 32 bits de données pour l'identification et 8 bits de checksum (chaine de dix caractères hexadécimaux).
@@ -43,7 +41,7 @@ La connection série étant à 9600 bauds, inutile de le préciser sur la ligne 
 Il est possible de supprimer le buzzer en enlevant la goute d'étain qui sert de jumper, sérigraphié Buzz sur le PCB ! En plus des bits relatifs au protocole EM4100, le module entoure la chaine de caractères des codes 0x02 (start of text) en début de chaine et 0x0A (CR), 0x0D (LF), 0x03 (end of text) en fin de chaine.
 </div>
 
-### Utilisation avec Java <a id="testSparkfun_Java"></a> 
+### Utilisation avec Java
 
 Pour utiliser ce kit avec Java il faudra utiliser la bibliothèque native [JSSC](https://code.google.com/archive/p/java-simple-serial-connector/) pour pouvoir gérer le port série.
 
@@ -114,7 +112,7 @@ public class SparkfunRFIDStarterKitTest extends Thread {
 </details>
 <br/>
 
-### Utilisation avec Python <a id="testSparkfun_Python"></a> 
+### Utilisation avec Python
 
 <details><summary>Cliquer pour voir le programme Python utilisé pour tester ce module</summary>
 
