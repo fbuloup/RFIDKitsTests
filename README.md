@@ -1,7 +1,7 @@
 # Introduction
 
 <p align="justify">
-Cette page présente les tests effectués sur deux modules RFID. Le premier est le Sparkfun Stater Kit et le second est le Phidget RFID 1024_0. Les tests ont été effectués en utilsant les langages Java et Python. En conclusion est présenté une courte synthèse comparative de ces deux kits.
+Cette page présente les tests effectués sur deux modules RFID. Le premier est le Sparkfun Starter Kit et le second est le Phidget RFID 1024_0. Les tests ont été effectués en utilsant les langages Java et Python, en comparant empiriquement les distances de détection avec le même tag. En conclusion est présenté une courte synthèse comparative de ces deux kits.
 </p>
 
 * [Test du SparkFun RFID starter Kit](#test-du-sparkfun-rfid-starter-kit)
@@ -26,7 +26,7 @@ Le kit contient un lecteur RFID USB, un scanner RFID ID_12LA et deux tags prépr
 [Lien vers une description du protocole EM4100](http://www.priority1design.com.au/em4100_protocol.html)
 
 <div align="justify">
-Avec l'ID_12LA, la détection de la carte est faite à environ 4,5cm en suivant la normale à la surface de la puce. Avec un ID_20LA, acheté séparément, cette distance est portée à environ 7,5cm. Pour un test rapide sous Mac OS ou Linux, il suffit de lancer dans un terminal :
+Avec l'ID_12LA, la détection du tag format carte de crédit est faite à environ 4,5cm en suivant la normale à la surface de la puce. Avec un ID_20LA, acheté séparément, cette distance est portée à environ 7,5cm. Pour un test rapide sous Mac OS ou Linux, il suffit de lancer dans un terminal :
 </div>
 
     screen /dev/tty.usbserial-A506LNUY
