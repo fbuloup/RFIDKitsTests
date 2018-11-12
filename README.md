@@ -356,12 +356,12 @@ Les mesures sont bien sûr équivalentes à celles effectuées avec le programme
 
 # Conclusion
 
-En vrac avec avantages pour le kit RFID phidgets !
+Nous allons donc utiliser le kit Phidgets qui parait être plus complet et qui correspond à notre critère principal de distance. Voici une petite liste des autres critères qui nous ont décidé à tester plus loin le kit Phidgets :
 
 * les deux kit sont sensiblement au même prix
 * le kit phidgets RFID possède des sorties numériques
-* le kit phidgets RFID est plus sensible
-* le kit phidgets RFID propose une API intéressante
+* le kit phidgets RFID est plus sensible (détection plus lointaine)
+* le kit phidgets RFID propose une API très intéressante
 
 À voir aussi (mais plus cher) :
 
