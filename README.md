@@ -177,7 +177,7 @@ Selon la documentation, Le tag doit être présent dans la zone de détection de
     When trying to read tags, you should allow the tag to remain within detection range for at least 50ms. 
     Tags moving through the detection area faster than this may not register at all.
 <p align="justify">
-Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux langages (C, C#, Java, Python notamment) et très bien documentée.</p>
+Pour utiliser le lecteur, Phidgets propose une API utilisable dans de nombreux langages (C, C#, Java, Python notamment) et très bien documentée.</p>
 
 ### Utilisation avec Java (Kit Phidgets)
 <p align="justify">
