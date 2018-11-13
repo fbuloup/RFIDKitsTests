@@ -49,7 +49,7 @@ Il est possible de supprimer le buzzer en enlevant la goute d'étain qui sert de
 <details><summary>Cliquer pour voir le programme Java utilisé pour tester ce module</summary>
 
 ```java
-package fr.cnrs.ism.rfid;
+package fr.cnrs.ism.tests.rfid;
 
 import java.util.Scanner;
 
@@ -186,7 +186,7 @@ Une partie de la documentation peut être trouvée en suivant ce <a href="https:
 <details><summary>Cliquer pour voir le programme Java utilisé pour tester ce module</summary>
 
 ```java
-package fr.cnrs.ism.rfid;
+package fr.cnrs.ism.tests.rfid;
 
 import java.util.Scanner;
 
