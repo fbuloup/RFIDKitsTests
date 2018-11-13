@@ -169,7 +169,7 @@ Un fois branché, ce kit n'apparaitra pas automatiquement dans les ports séries
 
 <p align="justify">
 En utilisant le driver, les cartes du kit précédent sont détectés à environ 13cm en suivant la normale à la surface occupée par l'antenne. Ce kit supporte donc le protocole EM4100 mais également <a href="https://en.wikipedia.org/wiki/ISO_11784_%26_11785">l'ISO 11784</a>, le 
-<a href="https://www.united-access.com/sites/www.united-access.com/files/u2/HitagS_V11.pdf">HITAG S</a> ainsi qu'un protocole maison (le Phidget tag).</p>
+<a href="https://www.united-access.com/sites/www.united-access.com/files/u2/HitagS_V11.pdf">HITAG S</a> ainsi qu'un protocole maison (le Phidgets tag).</p>
 <p align="justify">
 Selon la documentation, Le tag doit être présent dans la zone de détection de l'antenne durant au moins 50ms pour être détecté (Cf. <a href="https://www.phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023">Documentation - Onglet "User Guide"</a> pour plus de précisions). Voici l'extrait en question :</p>
 
