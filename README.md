@@ -1,7 +1,7 @@
 # Introduction
 
 <p align="justify">
-Cette page présente les tests effectués sur deux modules RFID. Le premier est le Sparkfun Starter Kit et le second est le Phidget RFID 1024_0. Les tests ont été effectués en utilsant les langages Java et Python, en comparant empiriquement les distances de détection avec le même tag. En conclusion est présenté une courte synthèse comparative de ces deux kits.
+Cette page présente les tests effectués sur deux modules RFID. Le premier est le Sparkfun Starter Kit et le second est le Phidget RFID 1024_0. Les tests ont été effectués en utilsant les langages Java et Python, en comparant empiriquement les distances de détection avec le même tag et les modalités de mise en oeuvre en Java et Python. En conclusion est présenté une courte synthèse comparative de ces deux kits.
 </p>
 
 * [Test du SparkFun RFID starter Kit](#test-du-sparkfun-rfid-starter-kit)
@@ -293,7 +293,7 @@ public class Test {
 ``` 
 </details>
 <br/>
-Les premières mesures montrent que la détection n'est pas faite si la durée de présence du tag est plus petite que 215ms environ. Ce qui n'est pas en correspondance avec les spécifications !?
+Les premières mesures montrent que la détection n'est pas faite si la durée de présence du tag est plus petite que 215ms environ. Ce qui n'est pas en correspondance avec les spécifications !? Ce n'est pas génant dans notre application.
 
 ### Utilisation avec Python (phidget)
 
@@ -356,9 +356,8 @@ Les mesures sont bien sûr équivalentes à celles effectuées avec le programme
 
 # Conclusion
 
-Nous allons donc utiliser le kit Phidgets qui parait être plus complet et qui correspond à notre critère principal de distance. Voici une petite liste des critères qui nous ont décidé à tester plus loin le kit Phidgets :
+Nous allons donc utiliser le kit Phidgets parce qu'il nous semble plus complet en terme d'interfaçage mais aussi parce qu'il correspond mieux à notre critère principal de distance. Voici une petite liste des critères qui nous ont décidé à tester plus loin le kit Phidgets, sachant que les deux kits sont sensiblement au même prix :
 
-* les deux kit sont sensiblement au même prix
 * le kit phidgets RFID possède des sorties numériques
 * le kit phidgets RFID est plus sensible (détection plus lointaine)
 * le kit phidgets RFID propose une API très intéressante
