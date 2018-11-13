@@ -356,7 +356,7 @@ Les mesures sont bien sûr équivalentes à celles effectuées avec le programme
 
 # Conclusion
 
-Nous allons donc utiliser le kit Phidgets qui parait être plus complet et qui correspond à notre critère principal de distance. Voici une petite liste des autres critères qui nous ont décidé à tester plus loin le kit Phidgets :
+Nous allons donc utiliser le kit Phidgets qui parait être plus complet et qui correspond à notre critère principal de distance. Voici une petite liste des critères qui nous ont décidé à tester plus loin le kit Phidgets :
 
 * les deux kit sont sensiblement au même prix
 * le kit phidgets RFID possède des sorties numériques
