@@ -44,12 +44,12 @@ Il est possible de supprimer le buzzer en enlevant la goute d'étain qui sert de
 
 ### Utilisation avec Java (Kit Sparkfun)
 
-<p align="justify">Pour utiliser ce kit avec Java et pouvoir gérer le port série, il faudra utiliser la bibliothèque native <a href="https://code.google.com/archive/p/java-simple-serial-connector/">JSSC</a></p>
+<p align="justify">Pour utiliser ce kit avec Java et pouvoir gérer le port série, il faudra utiliser la bibliothèque native <a href="https://code.google.com/archive/p/java-simple-serial-connector/">JSSC</a>.</p>
 
 <details><summary>Cliquer pour voir le programme Java utilisé pour tester ce module</summary>
 
 ```java
-package fr.univamu.ism.rfid;
+package fr.cnrs.ism.rfid;
 
 import java.util.Scanner;
 
