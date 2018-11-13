@@ -42,7 +42,7 @@ La connection série étant à 9600 bauds, inutile de le préciser sur la ligne 
 Il est possible de supprimer le buzzer en enlevant la goute d'étain qui sert de jumper, sérigraphié Buzz sur le PCB ! En plus des bits relatifs au protocole EM4100, le module entoure la chaine de caractères des codes 0x02 (start of text) en début de chaine et 0x0A (CR), 0x0D (LF), 0x03 (end of text) en fin de chaine.
 </div>
 
-### Utilisation avec Java (sparkfun)
+### Utilisation avec Java (Kit Sparkfun)
 
 <p align="justify">Pour utiliser ce kit avec Java et pouvoir gérer le port série, il faudra utiliser la bibliothèque native <a href="https://code.google.com/archive/p/java-simple-serial-connector/">JSSC</a></p>
 
@@ -113,7 +113,7 @@ public class SparkfunRFIDStarterKitTest extends Thread {
 </details>
 <br/>
 
-### Utilisation avec Python (sparkfun)
+### Utilisation avec Python (Kit Sparkfun)
 
 <details><summary>Cliquer pour voir le programme Python utilisé pour tester ce module</summary>
 
@@ -179,9 +179,9 @@ Selon la documentation, Le tag doit être présent dans la zone de détection de
 <p align="justify">
 Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux langages (C, C#, Java, Python notamment) et très bien documentée.</p>
 
-### Utilisation avec Java (phidget)
+### Utilisation avec Java (Kit Phidgets)
 <p align="justify">
-Une partie de la documentation peut être trouvée en suivant ce <a href="https://phidgets.com/docs/Language_-_Java">lien</a>. La librairie qui doit être liée au programme se trouve <a href="https://www.phidgets.com/downloads/phidget22/libraries/any/Phidget22Java.zip">ici</a>[](). Pour parcourir l'API, suivre ce <a href="https://phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023">lien</a> puis sélectionner l'onglet API.</p>
+Une partie de la documentation peut être trouvée en suivant ce <a href="https://phidgets.com/docs/Language_-_Java">lien</a>. La librairie qui doit être liée au programme se trouve <a href="https://www.phidgets.com/downloads/phidget22/libraries/any/Phidget22Java.zip">ici</a>. Pour parcourir l'API, suivre ce <a href="https://phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023">lien</a> puis sélectionner l'onglet API.</p>
 
 
 <details><summary>Cliquer pour voir le programme Java utilisé pour tester ce module</summary>
@@ -297,11 +297,12 @@ public class Test {
 ``` 
 </details>
 <br/>
-Les premières mesures montrent que la détection n'est pas faite si la durée de présence du tag est plus petite que 215ms environ. Ce qui n'est pas en correspondance avec les spécifications !? Ce n'est pas génant dans notre application.
+<p align="justify">
+Les premières mesures montrent que la détection n'est pas faite si la durée de présence du tag est plus petite que 215ms environ. Ce qui n'est pas en correspondance avec les spécifications !? Ce n'est pas génant dans notre application.</p>
 
-### Utilisation avec Python (phidget)
-
-Suivre ce [lien](https://phidgets.com/docs/Language_-_Python) pour télécharger le module Python ou consulter la documentation. Voici le programme de test utilisé :
+### Utilisation avec Python (Kit Phidgets)
+<p align="justify">
+	Suivre ce <a href="https://phidgets.com/docs/Language_-_Python">lien</a> pour télécharger le module Python ou consulter la documentation. Voici le programme de test utilisé :</p>
 
 <details><summary>Cliquer pour voir le programme Python utilisé pour tester ce module</summary>
 	
@@ -356,18 +357,21 @@ rfid.close();
 ```
 </details>
 <br/>
-Les mesures sont bien sûr équivalentes à celles effectuées avec le programme de test en Java.
+
+<p align="justify">
+Les mesures sont bien sûr équivalentes à celles effectuées avec le programme de test en Java.</p>
 
 # Conclusion
 
-Nous allons donc utiliser le kit Phidgets parce qu'il nous semble plus complet en terme d'interfaçage mais aussi parce qu'il correspond mieux à notre critère principal de distance. Voici une petite liste des critères qui nous ont décidé à tester plus loin le kit Phidgets, sachant que les deux kits sont sensiblement au même prix :
+<p align="justify">
+Nous allons donc utiliser le kit Phidgets parce qu'il nous semble plus complet en terme d'interfaçage mais aussi parce qu'il correspond mieux à notre critère principal de distance. Voici une petite liste des critères qui nous ont décidé à tester plus loin le kit Phidgets, sachant que les deux kits sont sensiblement au même prix :</p>
 
 * le kit phidgets RFID possède des sorties numériques
 * le kit phidgets RFID est plus sensible (détection plus lointaine)
 * le kit phidgets RFID propose une API très intéressante
+<p align="justify">
+À voir aussi, mais plus cher : <a href="https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide">Simultaneous RFID Tag Reader</a></p>
 
-À voir aussi (mais plus cher) :
 
-https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide
 
 
