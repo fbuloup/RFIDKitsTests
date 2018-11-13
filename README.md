@@ -44,7 +44,7 @@ Il est possible de supprimer le buzzer en enlevant la goute d'étain qui sert de
 
 ### Utilisation avec Java (sparkfun)
 
-Pour utiliser ce kit avec Java il faudra utiliser la bibliothèque native [JSSC](https://code.google.com/archive/p/java-simple-serial-connector/) pour pouvoir gérer le port série.
+<p align="justify">Pour utiliser ce kit avec Java et pouvoir gérer le port série, il faudra utiliser la bibliothèque native <a href="https://code.google.com/archive/p/java-simple-serial-connector/">JSSC</a></p>
 
 <details><summary>Cliquer pour voir le programme Java utilisé pour tester ce module</summary>
 
@@ -139,7 +139,8 @@ ser.close()
 ```
 </details>
 <br/>
-On obtient ce type de sortie console où l'on retrouve bien les caractères de début et de fin de texte ainsi que les caratères "retour chariot" et "saut de ligne" :
+<p align="justify">
+On obtient ce type de sortie console où l'on retrouve bien les caractères de début et de fin de texte ainsi que les caratères "retour chariot" et "saut de ligne" :</p>
 
     b'\x025500378C20CE\r\n'
     b'\x03\x025500378223C3\r\n'
@@ -154,30 +155,33 @@ On obtient ce type de sortie console où l'on retrouve bien les caractères de d
     
 
 # Test du Phidget RFID 1024_0
-
-Le kit contient un lecteur/enregistreur RFID USB. Il est donc possible de programmer soit même les identifiants des tags. Le tout fonctionne également à 125kHz mais avec différents protocoles, dont celui à 64 bits EM4001/4100 du kit précédent.
+<p align="justify">
+Le kit contient un lecteur/enregistreur RFID USB. Il est donc possible de programmer soit même les identifiants des tags. Le tout fonctionne également à 125kHz mais avec différents protocoles, dont celui à 64 bits EM4001/4100 du kit précédent.</p>
 
 [Lien vers la description du kit](https://www.phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023)
 
-Un fois branché, ce kit n'apparaitra pas automatiquement dans les ports séries. Il faudra installer un driver pour l'OS préféré :
+<p align="justify">
+Un fois branché, ce kit n'apparaitra pas automatiquement dans les ports séries. Il faudra installer un driver pour l'OS préféré :</p>
 
 * [Mac OS](https://www.phidgets.com/docs/OS_-_macOS#Quick_Downloads)
 * [Linux](https://www.phidgets.com/docs/OS_-_Linux#Quick_Downloads)
 * [Windows](https://www.phidgets.com/docs/OS_-_Windows#Quick_Downloads)
 
-En utilisant le driver, les cartes du kit précédent sont détectés à environ 13cm en suivant la normale à la surface occupée par l'antenne. Ce kit supporte donc le protocole EM4100 mais également [l'ISO 11784](https://en.wikipedia.org/wiki/ISO_11784_%26_11785), le [HITAG S](https://www.united-access.com/sites/www.united-access.com/files/u2/HitagS_V11.pdf) ainsi qu'un protocole maison (le Phidget tag).
-
-Selon la documentation, Le tag doit être présent dans la zone de détection de l'antenne durant au moins 50ms pour être détecté (Cf. [Documentation - Onglet "User Guide"](https://www.phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023) pour plus de précision). Voici l'extrait en question :
+<p align="justify">
+En utilisant le driver, les cartes du kit précédent sont détectés à environ 13cm en suivant la normale à la surface occupée par l'antenne. Ce kit supporte donc le protocole EM4100 mais également [l'ISO 11784](https://en.wikipedia.org/wiki/ISO_11784_%26_11785), le 
+<a href="https://www.united-access.com/sites/www.united-access.com/files/u2/HitagS_V11.pdf">HITAG S</a> ainsi qu'un protocole maison (le Phidget tag).</p>
+<p align="justify">
+Selon la documentation, Le tag doit être présent dans la zone de détection de l'antenne durant au moins 50ms pour être détecté (Cf. <a href="https://www.phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023">Documentation - Onglet "User Guide"</a> pour plus de précisions). Voici l'extrait en question :</p>
 
     Object Speed
     When trying to read tags, you should allow the tag to remain within detection range for at least 50ms. 
     Tags moving through the detection area faster than this may not register at all.
-
-Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux langages (C, C#, Java, Python notamment) et très bien documentée.
+<p align="justify">
+Pour utiliser le lecteur, Phidget propose une API utilisable dans de nombreux langages (C, C#, Java, Python notamment) et très bien documentée.</p>
 
 ### Utilisation avec Java (phidget)
-
-Une partie de la documentation peut être trouvée en suivant ce [lien](https://phidgets.com/docs/Language_-_Java). La librairie qui doit être liée au programme se trouve [ici](https://www.phidgets.com/downloads/phidget22/libraries/any/Phidget22Java.zip). Pour parcourir l'API, suivre ce [lien](https://phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023) puis sélectionner l'onglet API.
+<p align="justify">
+Une partie de la documentation peut être trouvée en suivant ce <a href="https://phidgets.com/docs/Language_-_Java">lien</a>. La librairie qui doit être liée au programme se trouve <a href="https://www.phidgets.com/downloads/phidget22/libraries/any/Phidget22Java.zip">ici</a>[](). Pour parcourir l'API, suivre ce <a href="https://phidgets.com/?tier=3&catid=81&pcid=72&prodid=1023">lien</a> puis sélectionner l'onglet API.</p>
 
 
 <details><summary>Cliquer pour voir le programme Java utilisé pour tester ce module</summary>
