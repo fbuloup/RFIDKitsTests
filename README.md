@@ -363,7 +363,7 @@ Les mesures sont bien sûr équivalentes à celles effectuées avec le programme
 # Conclusion
 
 <p align="justify">
-Nous allons donc utiliser le kit Phidgets parce qu'il nous semble plus complet en terme d'interfaçage mais aussi parce qu'il correspond mieux à notre critère principal de distance. Voici une petite liste des critères qui nous a décidée à tester plus loin le kit Phidgets, sachant que les deux kits sont sensiblement au même prix :</p>
+Nous allons donc utiliser le kit Phidgets parce qu'il nous semble plus complet en terme d'interfaçage mais aussi parce qu'il correspond mieux à notre critère principal de distance. Voici une petite liste des critères qui nous a décidé à tester plus loin le kit Phidgets, sachant que les deux kits sont sensiblement au même prix :</p>
 
 * le kit Phidgets possède des sorties numériques
 * le kit Phidgets est plus sensible (détection plus lointaine)
