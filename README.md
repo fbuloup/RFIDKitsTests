@@ -366,9 +366,10 @@ Les mesures sont bien sûr équivalentes à celles effectuées avec le programme
 <p align="justify">
 Nous allons donc utiliser le kit Phidgets parce qu'il nous semble plus complet en terme d'interfaçage mais aussi parce qu'il correspond mieux à notre critère principal de distance. Voici une petite liste des critères qui nous ont décidé à tester plus loin le kit Phidgets, sachant que les deux kits sont sensiblement au même prix :</p>
 
-* le kit phidgets RFID possède des sorties numériques
-* le kit phidgets RFID est plus sensible (détection plus lointaine)
-* le kit phidgets RFID propose une API très intéressante
+* le kit Phidgets possède des sorties numériques
+* le kit Phidgets est plus sensible (détection plus lointaine)
+* le kit Phidgets propose une API très intéressante
+* le kit Phidgets permet de programmer les tags
 <p align="justify">
 À voir aussi, mais plus cher : <a href="https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide">Simultaneous RFID Tag Reader</a></p>
 
