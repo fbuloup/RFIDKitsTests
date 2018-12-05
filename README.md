@@ -367,7 +367,7 @@ Nous allons donc utiliser le kit Phidgets parce qu'il nous semble plus complet e
 
 * le kit Phidgets possède des sorties numériques
 * le kit Phidgets est plus sensible (détection plus lointaine)
-* le kit Phidgets propose une API très intéressante
+* le kit Phidgets propose une API très intéressante (évènements, désactivation d'antenne etc.)
 * le kit Phidgets permet de programmer les tags
 <p align="justify">
 À voir aussi, mais plus cher : <a href="https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide">Simultaneous RFID Tag Reader</a></p>
